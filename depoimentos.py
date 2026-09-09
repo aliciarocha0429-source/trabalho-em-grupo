@@ -2,11 +2,11 @@ from datetime import datetime
 
 class Depoimentos: 
     def __init__(self, depoimento: str, pessoa, caso, ):
-        self.__depoimento = depoimento # TRANSCREVER TODO DEPOIMENTO DA PESSOA
-        self.__caso = caso # CLASS CASO
-        self.__pessoa = pessoa # CLASS PESSOA
-        self.__linha_do_tempo = [] # SAIU DE TAL LUGAR - PARTIU PRA TAL LUGAR - CHEGOU EM TAL LUGAR
-        self.__conclusao = "" # COLOCA TIPO: POSSIVEL INCOSSISTENCIA
+        self.__depoimento = depoimento 
+        self.__caso = caso
+        self.__pessoa = pessoa
+        self.__linha_do_tempo = [] 
+        self.__conclusao = "" 
         self.__horario = datetime.now()
 
     def get_depoimento(self):
