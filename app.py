@@ -1,4 +1,6 @@
+from pessoas import Pessoa, Investigador, Suspeito, Testemunhas 
 from depoimentos import Depoimentos
+
 
 # lista_casos = []
 # n = 1
