@@ -2,7 +2,7 @@
 
 class Pessoa:
 
-    def __init__(self, nome, data_nascimento, cpf, genero, telefone, endereco):
+    def __init__(self, nome, data_nascimento: str, cpf, genero, telefone, endereco):
         self.__nome_pessoa = nome
         self.__data_nascimento = data_nascimento
         self.__cpf = cpf
