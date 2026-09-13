@@ -5,7 +5,6 @@ from datetime import datetime
 class Depoimentos:
 
     def __init__(self, depoimento: str, pessoa):
-
         self.__depoimento = depoimento
         self.__pessoa = pessoa
         self.__horario = datetime.now()

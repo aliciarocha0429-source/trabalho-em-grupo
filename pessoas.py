@@ -12,7 +12,6 @@ class Pessoa:
 
     def get_nome_pessoa(self):
         return self.__nome_pessoa
-
     def exibir_informacoes(self):
         print("\nPESSOA")
         print(f"Nome: {self.__nome_pessoa}")
@@ -21,13 +20,11 @@ class Pessoa:
         print(f"Gênero: {self.__genero}")
 
 class Investigador(Pessoa):
-
     def __init__(self, nome, data_nascimento, cpf, genero, telefone,
                  endereco, registro_funcional, cargo, departamento):
         super().__init__(
             nome, data_nascimento, cpf, genero, telefone, endereco
         )
-
         self.__registro_funcional = registro_funcional
         self.__cargo = cargo
         self.__departamento = departamento
@@ -40,7 +37,6 @@ class Investigador(Pessoa):
         print(f"Cargo: {self.__cargo}")
         print(f"Departamento: {self.__departamento}")
 
-
     def set_cargo(self):
         novo_cargo = input("Digite o novo cargo: ")
         self.__cargo = novo_cargo
@@ -51,16 +47,12 @@ class Investigador(Pessoa):
         self.__departamento = novo_departamento
         print("Departamento atualizado.")
 
-
 class Suspeito(Pessoa):
-
     def __init__(self, nome, data_nascimento, cpf, genero, telefone,
                  endereco, status_custodia, caracteristicas_fisicas):
-
         super().__init__(
             nome, data_nascimento, cpf, genero, telefone, endereco
         )
-
         self.__status_custodia = status_custodia
         self.__caracteristicas = caracteristicas_fisicas
 
@@ -79,14 +71,11 @@ class Suspeito(Pessoa):
 
 
 class Testemunhas(Pessoa):
-
     def __init__(self, nome, data_nascimento, cpf, genero, telefone,
                  endereco, tipo_testemunha):
-
         super().__init__(
             nome, data_nascimento, cpf, genero, telefone, endereco
         )
-
         self.__tipo_testemunha = tipo_testemunha
 
     def get_nome_testemunha(self):

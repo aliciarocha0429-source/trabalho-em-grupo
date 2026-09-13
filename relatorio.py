@@ -1,14 +1,12 @@
 class Relatorio:
 
     def __init__(self, caso):
-
         self.caso = caso
         self.evidencias = []
         self.local = None
         self.depoimento = []
 
     def get_gerar_relatorio(self):
-
         print(f"\n{'=-=' * 15}")
         print("RELATÓRIO DO CASO")
         print(f"DATA: {self.caso.data}")
