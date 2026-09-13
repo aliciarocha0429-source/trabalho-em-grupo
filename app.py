@@ -161,7 +161,7 @@ def gerenciar_relatorio(caso):
             if len(caso.testemunhas) == 0:
                 print("Sem testemunha cadastrada, impossivel adicionar depoimento.")
             else:
-                depoimento = input("\nDigite o depoimento")
+                depoimento = input("\nDigite o depoimento: ")
 
                 for n in range(len(caso.testemunhas)):
                     print(f"{n+1} - {caso.testemunhas[n].get_nome_testemunha()}")
