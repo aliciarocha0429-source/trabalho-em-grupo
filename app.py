@@ -183,7 +183,7 @@ def gerenciar_relatorio(caso):
 
 def menu_primeiro():
     while True:
-        escolher = int(input("\nINFORMATICOS INVESTIGATION\n1 — Cadastrar caso\n2 - Escolher caso\n3 - Ver quantidades de casos registrados "))
+        escolher = int(input("\nINFORMATICOS INVESTIGATION\n1 — Cadastrar caso\n2 - Escolher caso\n3 - Ver quantidades de casos registrados\n4 - Excluir Caso "))
 
         if escolher == 1:
             cadastrar_caso()
@@ -191,6 +191,13 @@ def menu_primeiro():
             escolher_caso()
         elif escolher == 3:
             print(f"Quantidade de casos registrado: ", len(casos))
+        elif escolher == 4:
+            print("\nCASOS REGISTRADOS: ")
+            for b in range(len(casos)):
+                print(f"{b+1} - {casos[b].titulo}")
+            excluir = int(input("Digite o numero do caso que voce deseja excluir: "))-1
+            del casos[excluir]
+            print("Caso excluido com sucesso!\n")
         else:
             print("Opção Invalida!")
 
