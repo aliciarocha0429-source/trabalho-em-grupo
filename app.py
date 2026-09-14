@@ -27,7 +27,7 @@ def gerenciar_investigadores(caso):
         controle_investigadores = int(input("\nINFORMATICOS INVESTIGATION\n1 — Cadastrar investigador\n2 — Listar investigadores\n3 — Alterar cargo\n4 — Alterar departamento\n0 — Voltar "))
 
         if controle_investigadores == 1:
-            dados = input("\nCADASTRANDO INVESTIGADOR: \nDigite separado pro virgula o nome do investigador, data de nascimento, cpf, genero, telefone, endereco, registro funcional, cargo, departamento: ").split(",")
+            dados = input("\nCADASTRANDO INVESTIGADOR: \nDigite separado por virgula o nome do investigador, data de nascimento, cpf, genero, telefone, endereco, registro funcional, cargo, departamento: ").split(",")
 
             investigador = Investigador(*dados)
 
@@ -70,7 +70,7 @@ def gerenciar_suspeitos(caso):
         controle_suspeitos = int(input("\nINFORMATICOS INVESTIGATION\n1 — Cadastrar suspeito\n2 — Listar suspeitos\n3 — Alterar status de custódia\n0 — Voltar "))
 
         if controle_suspeitos == 1:
-            dados = input("\nCADASTRANDO SUSPEITO: \nDigite separado pro virgula o nome do suspeito, data de nascimento, cpf, genero, telefone, endereco, status da custodia, caracteristicas(separado por espaço ou por ponto e virgula): ").split(",")
+            dados = input("\nCADASTRANDO SUSPEITO: \nDigite separado por virgula o nome do suspeito, data de nascimento, cpf, genero, telefone, endereco, status da custodia, caracteristicas(separado por espaço ou por ponto e virgula): ").split(",")
 
             suspeito = Suspeito(*dados)
 
@@ -102,7 +102,7 @@ def gerenciar_testemunhas(caso):
         controle_testemunhas = int(input("\nINFORMATICOS INVESTIGATION\n1 — Cadastrar testemunha\n2 — Listar testemunha\n3 — Alterar tipo de testemunha\n0 — Voltar "))
 
         if controle_testemunhas == 1:
-            dados = input("\nCADASTRANDO TESTEMUNHA: \nDigite separado pro virgula o nome da testemunha, data de nascimento, cpf, genero, telefone, endereco, tipo de testemunha: ").split(",")
+            dados = input("\nCADASTRANDO TESTEMUNHA: \nDigite separado por virgula o nome da testemunha, data de nascimento, cpf, genero, telefone, endereco, tipo de testemunha: ").split(",")
 
             testemunha = Testemunhas(*dados)
 
@@ -140,7 +140,7 @@ def gerenciar_relatorio(caso):
             caso.relatorio.get_gerar_relatorio()
 
         elif controle_relatorio == 2:
-            dados = input("\nCADASTRANDO EVIDENCIAS: \nDigite separado pro virgula o codigo da evidencia, descricao, local encontrado, data e hora, relevancia: ").split(",")
+            dados = input("\nCADASTRANDO EVIDENCIAS: \nDigite separado por virgula o codigo da evidencia, descricao, local encontrado, data e hora, relevancia: ").split(",")
 
             evidencia = Evidencia(*dados)
 
@@ -149,7 +149,7 @@ def gerenciar_relatorio(caso):
             print("EVIDENCIA ADICIONADA COM SUCESSO!")
 
         elif controle_relatorio == 3:
-            dados = input("\nCADASTRANDO LOCAL: \nDigite separado pro virgula o codigo do local, nome, endereco, descricao").split(",")
+            dados = input("\nCADASTRANDO LOCAL: \nDigite separado por virgula o codigo do local, nome, endereco, descricao").split(",")
 
             local = Local(*dados)
 
